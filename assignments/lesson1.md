@@ -18,7 +18,7 @@ Short Answer and Coding. The questions for Problem 1 are mostly about the Haltin
 
 ### Halting Problem
 When you examine the code in HaltingCalculator, it seems obvious that the halts method will never be able to detect that an input program fails to terminate normally, unless the program happens to throw a runtime exception (if, however, the input program goes into an infinite loop, the halts method has no way to detect this). So, it should be obvious that we have failed to provide an algorithm that solves the Halting Problem. Why don’t these observations provide us with a proof that there is no algorithmic solution to the Halting Problem?
-This version of HaltingCalculator does not produce proper output when halts method enters into an infinite loop. If we change the logic of the HaltingCalculator it might produce right output even through the halts enters into an infinite loop. So, this could not prove that there is no solution for halting problems. The example of SelfApp could prove that the HaltProblem is unresolvable.
+ > This version of HaltingCalculator does not produce proper output when halts method enters into an infinite loop. If we change the logic of the HaltingCalculator it might produce right output even through the halts enters into an infinite loop. So, this could not prove that there is no solution for halting problems. The example of SelfApp could prove that the HaltProblem is unresolvable.
 
 ## Problem 2
 GCD Algorithm. Write a Java method int gcd(int m, int n) which accepts positive integer inputs m, n and outputs the greatest common divisor of m and n.
@@ -35,10 +35,10 @@ GCD Algorithm. Write a Java method int gcd(int m, int n) which accepts positive 
 
 ## Problem 3
 Brute Force Solution. Formulate your own procedure for solving the SubsetSum Problem. Think of it as a Java method subsetsum that accepts as input S,k, and outputs a subsetT ofSwiththepropertythatthesumofthesi inT iskifsuchaT exists,ornullifno such T can be found. (A non-null return value can be thought of as a return of “true” and a null return value signifies “false.”) Implement your idea in Java code.
-    ```public static Set<Integer> subsetsum(int[] S, int k) {
+
+    public static Set<Integer> subsetsum(int[] S, int k) {
         if(S == null) return null;
         if(k == 0) return new HashSet<Integer>();
-
         int len = S.length;
 
         Set<Set<Integer>> sets = new HashSet<Set<Integer>>();
