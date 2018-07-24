@@ -22,16 +22,17 @@ When you examine the code in HaltingCalculator, it seems obvious that the halts 
 
 ## Problem 2
 GCD Algorithm. Write a Java method int gcd(int m, int n) which accepts positive integer inputs m, n and outputs the greatest common divisor of m and n.
-   public static int gcd(int m, int n) {
-       int maxDivisor = 1;
-       int divisor = m >= n ? n : m;
-       for(int i=1; i <= divisor; i++) {
-         if(m % i == 0 && n % i == 0) {
-           maxDivisor = i;
+
+    public static int gcd(int m, int n) {
+           int maxDivisor = 1;
+           int divisor = m >= n ? n : m;
+           for(int i=1; i <= divisor; i++) {
+             if(m % i == 0 && n % i == 0) {
+               maxDivisor = i;
+             }
+           }
+           return maxDivisor;
          }
-       }
-       return maxDivisor;
-     }
 
 ## Problem 3
 Brute Force Solution. Formulate your own procedure for solving the SubsetSum Problem. Think of it as a Java method subsetsum that accepts as input S,k, and outputs a subsetT ofSwiththepropertythatthesumofthesi inT iskifsuchaT exists,ornullifno such T can be found. (A non-null return value can be thought of as a return of “true” and a null return value signifies “false.”) Implement your idea in Java code.
