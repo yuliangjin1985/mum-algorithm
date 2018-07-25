@@ -2,17 +2,19 @@
 Determine the asymptotic running time of the following procedure (an exact computation of number of basic operations is not necessary):
 
     int[] arrays(int n) {
-                   int[] arr = new int[n];
-                   for(int i = 0; i < n; ++i){
-    arr[i] = 1;
-                   }
-                   for(int i = 0; i < n; ++i) {
-                      for(int j = i; j < n; ++j){
-                         arr[i] += arr[j] + i + j;
-    } }
-    return arr; }
+       int[] arr = new int[n];
+       for(int i = 0; i < n; ++i){
+            arr[i] = 1;
+       }
+       for(int i = 0; i < n; ++i) {
+          for(int j = i; j < n; ++j){
+             arr[i] += arr[j] + i + j;
+            }
+       }
+        return arr;
+    }
 
-The asymptotic running time of the above procedure is $$O(n^2)$$.
+The asymptotic running time of the above procedure is $O(n^2)$.
 
 ### Explain (in your own words):
  + What is a decision problem?
