@@ -53,5 +53,51 @@ public static int[] merge(int[] arr1, int[] arr2) {
   }
 
 ## 3
+Use the limit definitions of complexity classes given in class to decide whether each of the following is true or false, and in each case, prove your answer.
  ![Anser of question 3](https://github.com/yuliangjin1985/mum-algorithm/blob/master/assignments/pics/IMG_4153.JPG)
+
+## 4 Power Set Algorithm
+Given a set X, the power set of X, denoted P(X), is the set of all subsets of X. Below, you are given an algorithm for computing the power set of a given set. This algorithm is used in the brute-force solution to the SubsetSum Problem, discussed in the first lecture. Implement this algorithm in a Java method:
+
+    public static List<Set<Integer>> powerSet(List<Integer> X) {
+        List<Set<Integer>> P = new ArrayList<Set<Integer>>();
+        HashSet<Integer> S = new HashSet<Integer>();
+        P.add(S);
+        HashSet<Integer> T = new HashSet<Integer>();
+        while(!X.isEmpty()) {
+          List<Set<Integer>> temp = new ArrayList<Set<Integer>>();
+          Integer f = X.remove(0);
+          //When iterate over P, P should not be modified(like adding elements or delete elements during the process of
+          // iteration) at the same time, otherwise ConcurrentModificationException will be thrown.
+          for (Set<Integer> x : P) {
+            T = new HashSet<Integer>(x);
+            T.add(f);
+            temp.add(T);
+          }
+
+          for (Set<Integer> integers : temp) {
+            P.add(integers);
+          }
+        }
+        return P;
+      }
+
+## 5
+In the slides, an algorithm removeDups was given for extracting a list of all the distinct elements of a given input list L.
+
+ + Explain why the running time of removeDups is O(n^2)
+   Because in the contains method of the ArrayList, it iterates over the list data using a for loop. Therefor, this algorithm is actually a nested for loop. So the running time is O(n^2).
+ + Try using the technique shown in the solution to the Sum of Two problem (i.e. a HashMap) to improve running time of removeDups to O(n)
+
+    public static List<Integer> removeDups(List<Integer> L) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        for (Integer integer : L) {
+          if(!map.containsKey(integer)) {
+            map.put(integer, 1);
+            list.add(integer);
+          }
+        }
+        return list;
+      }
 
