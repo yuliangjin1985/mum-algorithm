@@ -1,4 +1,6 @@
-## Problem 1
+# Questions and Answers of Lab 2
+
+## 1
 Determine the asymptotic running time of the following procedure (an exact computation of number of basic operations is not necessary):
 
     int[] arrays(int n) {
@@ -16,21 +18,15 @@ Determine the asymptotic running time of the following procedure (an exact compu
 
 The asymptotic running time of the above procedure is $O(n^2)$.
 
-### Explain (in your own words):
- + What is a decision problem?
- > A problem with ‘yes’ or ‘no’ output.
+## 2
+Consider the following problem: As input you are given two sorted arrays of integers. Your objective is to design an algorithm that would merge the two arrays together to form a new sorted array that contains all the integers contained in the two arrays. For example, on input
+           [1, 4, 5, 8, 17], [2, 4, 8, 11, 13, 21, 23, 25]
+the algorithm would output the following array:
+     [1,2,4,4,5,8,8, 11, 13, 17, 21, 23, 25]
+For this problem, do the following:
 
- + What does it mean to say that a decision problem belongs to NP?
- > NP stands for nondeterministic polynomial, it is a complexity class used to describe certain types of decision problems.
+ +  Design an algorithm Merge to solve this problem and write your algorithm description using the pseudo-code syntax discussed in class.
+ +  Examining your pseudo-code, determine the asymptotic running time of this merge algorithm
+ ![Answer of the above two questions](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+ +  Implement your pseudo-code as a Java method merge having the following signature: int[] merge(int[] arr1, int[] arr2). Be sure to test your method in a main method to be sure it really works!
 
- + What is the Halting Problem?
- > The Halting Problem is to check whether a program will terminate or not with particular inputs.
-
- + What is a universal Java program?
- > A universal Java program accepts any normal Java Program and BigInteger inputs and runs the program with the inputs and returns the value.
-
-### Why is BigInteger used as an argument for the method of a normal Java program?
- > Because this type of input actually could be any real java input types. It’s a encoded parameter type.
-
-## Problem 2
-When you examine the code in HaltingCalculator, it seems obvious that the halts method will never be able to detect that an input program fails to terminate normally, unless the program happens to throw a runtime exception (if, however, the input program goes into an infinite loop, the halts method has no way to detect this). So, it should be obvious that we have failed to provide an algorithm that solves the Halting Problem. Why don’t these observations provide us with a proof that there is no algorithmic solution to the Halting Problem?
