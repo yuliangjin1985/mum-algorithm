@@ -30,3 +30,25 @@ For this problem, do the following:
  ![Answer of the above two questions](https://github.com/yuliangjin1985/mum-algorithm/blob/master/assignments/pics/IMG_4151.JPG)
  +  Implement your pseudo-code as a Java method merge having the following signature: int[] merge(int[] arr1, int[] arr2). Be sure to test your method in a main method to be sure it really works!
 
+```java
+public static int[] merge(int[] arr1, int[] arr2) {
+    int len1 = arr1.length;
+    int len2 = arr2.length;
+    int[] arr3 = new int[len1 + len2];
+    int a=0, b=0, c=0;
+    while(a<len1 && b<len2) {
+      if(arr1[a] <= arr2[b]) {
+        arr3[c++] = arr1[a++];
+      } else {
+        arr3[c++] = arr2[b++];
+      }
+    }
+    while(a<len1) {
+      arr3[c++] = arr1[a++];
+    }
+    while (b<len2) {
+      arr3[c++] = arr2[b++];
+    }
+    return arr3;
+  }
+
