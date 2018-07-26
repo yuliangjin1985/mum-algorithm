@@ -52,3 +52,6 @@ public static int[] merge(int[] arr1, int[] arr2) {
     return arr3;
   }
 
+## 3
+ ![Anser of question 3](https://github.com/yuliangjin1985/mum-algorithm/blob/master/assignments/pics/IMG_4153.JPG)
+
