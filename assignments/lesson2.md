@@ -25,10 +25,10 @@ the algorithm would output the following array:
      [1,2,4,4,5,8,8, 11, 13, 17, 21, 23, 25]
 For this problem, do the following:
 
- +  Design an algorithm Merge to solve this problem and write your algorithm description using the pseudo-code syntax discussed in class.
- +  Examining your pseudo-code, determine the asymptotic running time of this merge algorithm
+ 1  Design an algorithm Merge to solve this problem and write your algorithm description using the pseudo-code syntax discussed in class.
+ 2  Examining your pseudo-code, determine the asymptotic running time of this merge algorithm
  ![Answer of the above two questions](https://github.com/yuliangjin1985/mum-algorithm/blob/master/assignments/pics/IMG_4151.JPG)
- +  Implement your pseudo-code as a Java method merge having the following signature: int[] merge(int[] arr1, int[] arr2). Be sure to test your method in a main method to be sure it really works!
+ 3  Implement your pseudo-code as a Java method merge having the following signature: int[] merge(int[] arr1, int[] arr2). Be sure to test your method in a main method to be sure it really works!
 
     public static int[] merge(int[] arr1, int[] arr2) {
         int len1 = arr1.length;
@@ -85,9 +85,9 @@ Given a set X, the power set of X, denoted P(X), is the set of all subsets of X.
 ## 5
 In the slides, an algorithm removeDups was given for extracting a list of all the distinct elements of a given input list L.
 
- + Explain why the running time of removeDups is O(n^2)
+ 1. Explain why the running time of removeDups is O(n^2)
    Because in the contains method of the ArrayList, it iterates over the list data using a for loop. Therefor, this algorithm is actually a nested for loop. So the running time is O(n^2).
- + Try using the technique shown in the solution to the Sum of Two problem (i.e. a HashMap) to improve running time of removeDups to O(n)
+ 2. Try using the technique shown in the solution to the Sum of Two problem (i.e. a HashMap) to improve running time of removeDups to O(n)
 
     public static List<Integer> removeDups(List<Integer> L) {
         ArrayList<Integer> list = new ArrayList<Integer>();
