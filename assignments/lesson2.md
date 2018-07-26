@@ -27,6 +27,6 @@ For this problem, do the following:
 
  +  Design an algorithm Merge to solve this problem and write your algorithm description using the pseudo-code syntax discussed in class.
  +  Examining your pseudo-code, determine the asymptotic running time of this merge algorithm
- ![Answer of the above two questions](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+ ![Answer of the above two questions](https://github.com/yuliangjin1985/mum-algorithm/blob/master/assignments/pics/IMG_4150.JPG)
  +  Implement your pseudo-code as a Java method merge having the following signature: int[] merge(int[] arr1, int[] arr2). Be sure to test your method in a main method to be sure it really works!
 
