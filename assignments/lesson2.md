@@ -83,9 +83,9 @@ Given a set X, the power set of X, denoted P(X), is the set of all subsets of X.
 
 ## 5
 In the slides, an algorithm removeDups was given for extracting a list of all the distinct elements of a given input list L.
- 1 Explain why the running time of removeDups is O(n^2)
-   Because in the contains method of the ArrayList, it iterates over the list data using a for loop. Therefor, this algorithm is actually a nested for loop. So the running time is O(n^2).
- 2 Try using the technique shown in the solution to the Sum of Two problem (i.e. a HashMap) to improve running time of removeDups to O(n)
+### Explain why the running time of removeDups is O(n^2)
+Because in the contains method of the ArrayList, it iterates over the list data using a for loop. Therefor, this algorithm is actually a nested for loop. So the running time is O(n^2).
+### Try using the technique shown in the solution to the Sum of Two problem (i.e. a HashMap) to improve running time of removeDups to O(n)
 
     public static List<Integer> removeDups(List<Integer> L) {
         ArrayList<Integer> list = new ArrayList<Integer>();
