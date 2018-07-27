@@ -1,5 +1,4 @@
 ## Problem 2
-## Problem 2
 Assume the running time T(n) for a particular algorithm satisfies the following recurrence relation:
 T(1) = c
 T(n) = T(n-1) + T(n-1) + T(n-2) + d (for some c, d > 0)
