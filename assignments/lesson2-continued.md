@@ -1,23 +1,22 @@
-## Problem 1
-Determine the asymptotic running time of the following procedure (an exact computation of number of basic operations is not necessary):
+## Problem 2
+## Problem 2
+Assume the running time T(n) for a particular algorithm satisfies the following recurrence relation:
+T(1) = c
+T(n) = T(n-1) + T(n-1) + T(n-2) + d (for some c, d > 0)
+Use the technique of computing running time for the Fib algorithm discussed in class to solve the recurrence.
 
-The asymptotic running time of the above procedure is $O(n^2)$.
+ ![Anser of question 2](https://github.com/yuliangjin1985/mum-algorithm/blob/master/assignments/pics/guessing_method.jpg)
 
-### Explain (in your own words):
- + What is a decision problem?
- > A problem with ‘yes’ or ‘no’ output.
+## Problem 3
 
- + What does it mean to say that a decision problem belongs to NP?
- > NP stands for nondeterministic polynomial, it is a complexity class used to describe certain types of decision problems.
+ ![Anser of question 3](https://github.com/yuliangjin1985/mum-algorithm/blob/master/assignments/pics/IMG_4160.JPG)
+## Problem 4
+Devise an iterative algorithm for computing the Fibonacci numbers and compute its running time.
+ ![Anser of question 3](https://github.com/yuliangjin1985/mum-algorithm/blob/master/assignments/pics/IMG_4165.JPG)
 
- + What is the Halting Problem?
- > The Halting Problem is to check whether a program will terminate or not with particular inputs.
 
- + What is a universal Java program?
- > A universal Java program accepts any normal Java Program and BigInteger inputs and runs the program with the inputs and returns the value.
-
-### Why is BigInteger used as an argument for the method of a normal Java program?
- > Because this type of input actually could be any real java input types. It’s a encoded parameter type.
+## 5
+ ![Anser of question 3](https://github.com/yuliangjin1985/mum-algorithm/blob/master/assignments/pics/master_formula.jpg)
 
 ## Problem 6
 You are given a length-n array A consisting of 0s and 1s, arranged in sorted order. Give an o(n) algorithm that counts the total number of 0s and 1s in the array. Your algorithm may not make use of auxiliary storage such as arrays or hashtables (more precisely, the only additional space used, beyond the given array, is O(1)). You must give an argument to show that your algorithm runs in o(n) time.
