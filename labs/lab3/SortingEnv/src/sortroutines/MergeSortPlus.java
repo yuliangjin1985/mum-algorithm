@@ -1,11 +1,12 @@
 package sortroutines;
 
 
-import runtime.*;
 import java.util.Random;
 
+import runtime.Sorter;
 
-public class MergeSort extends Sorter {
+
+public class MergeSortPlus extends Sorter {
 	final int ARRAY_SIZE = 33;
 	final int MAX_VAL = 1000;
 	int[] theArray;
@@ -21,7 +22,6 @@ public class MergeSort extends Sorter {
 			System.out.print(i + " ");
 		}
 		return theArray;
-//          return new MergeSortV2().mergeSort(input);
 	}
 	
 	
@@ -64,6 +64,23 @@ public class MergeSort extends Sorter {
 		if(lower==upper){
 			return;
 		}
+
+		//Use InsertionSort to process
+		if(upper < lower + 20) {
+			int len = upper - lower + 1;
+			int temp = 0;
+			int j = 0;
+			for(int i = 1; i < len; ++i) {
+				temp = tempStorage[i];
+				j=i;
+				while(j>0 && temp < tempStorage[j-1]){
+					tempStorage[j] = tempStorage[j-1];
+					j--;
+				}
+				tempStorage[j]=temp;
+			}
+			return;
+		}
 		
 		else {
 			int mid = (lower+upper)/2;
@@ -76,7 +93,7 @@ public class MergeSort extends Sorter {
 	
 	//set up routines
 	public static void main(String[] args){
-		MergeSort ms = new MergeSort();
+		MergeSortPlus ms = new MergeSortPlus();
 		//ms.testMerge();
 		ms.testMergeSort();
 	}
