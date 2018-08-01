@@ -30,7 +30,7 @@ BSTSort. The BST creation process takes O(nlogn)(?), the output process running 
 ## Problem 3
 For each integer n = 1, 2, 3,..., 7, determine whether there exists a red-black tree having exactly n nodes, with all of them black. Fill out the chart below to tabulate the results:
 |Num nodes n|Does there exist a red-black tree with n nodes, all of which are black?|
-|--|--|
+|---|---|
 |1|Yes|
 |2|No|
 |3|Yes|
@@ -41,7 +41,7 @@ For each integer n = 1, 2, 3,..., 7, determine whether there exists a red-black 
 
 ## Problem 4
 For each integer n = 1,2,3,..., 7, determine whether there exists a red-black tree having exactly n nodes, where exactly one of the nodes is red. Fill out the chart below to tabulate the results:
-|--|--|
+|---|---|
 |1|No|
 |2|Yes|
 |3|No|
