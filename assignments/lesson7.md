@@ -51,3 +51,8 @@ Num nodes n|Does there exist a red-black tree with n nodes, where exactly one of
 6|No
 7|No
 
+name | age
+---- | ---
+LearnShare | 12
+Mike |  32
+
